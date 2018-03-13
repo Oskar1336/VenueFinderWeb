@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import VenueContainer from '../../../EventList/components/EventList.js';
-import {google} from 'react-google-maps'
+
+const MY_API_KEY = "AIzaSyD07WnCpgabR945R95UiJp5LMyfvLkQgP4" // fake
+
 
 
 export default class SearchField extends React.Component{
@@ -21,8 +23,7 @@ export default class SearchField extends React.Component{
 	}
 
 	componentDidMount(){
-		var input = document.getElementById("#input-city");
-		var autoComplete = new google.maps.places.Autocomplete(input);
+		
 	}
 
 	render(){
@@ -35,7 +36,6 @@ export default class SearchField extends React.Component{
 			  				<div className="input-group-append">
 			    				<button className="btn btn-outline-secondary" onClick={this.getLatLng} type="button">{this.props.btnText}</button>
 			  				</div>
-						</div>
 					</div>	
 				</div>
 				<VenueContainer events={this.state.venueList}/>
@@ -47,7 +47,6 @@ export default class SearchField extends React.Component{
 		this.setState({
 			city : evt.target.value,
 		});
-		this.forceUpdate();	
 	}
 
 
