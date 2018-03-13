@@ -46,7 +46,7 @@ class VenueInfo extends React.Component {
 				    <p className="card-text">{this.props.events.location}</p>
 				    <p className="card-text">{this.props.events.time}</p>
 				    <div className="container">
-					    <a href={this.props.events.link} className="btn btn-primary">Get tickets</a>
+					    <a href={this.props.events.link} target="_blank" className="btn btn-primary">Get tickets</a>
 					    <button className="btn btn-danger float-right" onClick={() => this.saveEvent(this.props.events)}>Add to my events</button>
 					</div>
 				  </div>
