@@ -2,6 +2,10 @@ html, body {
   height:100%;
 }
 
+body{
+  background-color:#202020;
+}
+
 #root {
   height:100%;
 }
