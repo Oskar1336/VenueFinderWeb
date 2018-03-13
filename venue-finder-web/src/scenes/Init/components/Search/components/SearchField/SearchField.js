@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import VenueContainer from '../../../EventList/components/EventList.js';
-import {google} from 'react-google-maps'
+// import {google} from 'react-google-maps'
 
 
 export default class SearchField extends React.Component{
@@ -19,7 +19,7 @@ export default class SearchField extends React.Component{
 
 	componentDidMount(){
 		var input = document.getElementById("#input-city");
-		var autoComplete = new google.maps.places.Autocomplete(input);
+		// var autoComplete = new google.maps.places.Autocomplete(input);
 	}
 
 	render(){

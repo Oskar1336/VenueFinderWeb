@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './EventList.css';
-
+import {searchForEvent} from '../../../../../helpers.js'
 
 
 export default class VenueContainer extends React.Component {
@@ -20,6 +20,21 @@ export default class VenueContainer extends React.Component {
 
 
 class VenueInfo extends React.Component {
+
+	saveEvent(event) {
+		var eventList = JSON.parse(localStorage.getItem("LOCALSTORAGE_SAVED_EVENTS"));
+		if (eventList == null) {
+			eventList = {
+				events: []
+			};
+		}
+
+		if (!searchForEvent(event, eventList.events)) {
+			eventList.events.push(event);
+			localStorage.setItem("LOCALSTORAGE_SAVED_EVENTS", JSON.stringify(eventList));
+		}
+	}
+
 	render(){
 		return(
 			<div className="row">
@@ -31,7 +46,7 @@ class VenueInfo extends React.Component {
 				    <p className="card-text">{this.props.events.time}</p>
 				    <div className="container">
 					    <a href={this.props.events.link} className="btn btn-primary">Get tickets</a>
-					    <a href={this.props.events.link} className="btn btn-danger float-right">Add to my events</a>
+					    <button className="btn btn-danger float-right" onClick={() => this.saveEvent(this.props.events)}>Add to my events</button>
 					</div>
 				  </div>
 				</div>

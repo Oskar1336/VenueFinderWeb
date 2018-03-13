@@ -9,7 +9,7 @@ class ShowListButton extends Component {
 	showSavedList() {
 		var savedEvents = JSON.parse(localStorage.getItem("LOCALSTORAGE_SAVED_EVENTS"));
 		if (savedEvents != null) {
-			ReactDOM.render(<SavedEventList events={savedEvents} />, document.getElementById('saved-events-container'));
+			ReactDOM.render(<SavedEventList events={savedEvents.events} />, document.getElementById('saved-events-container'));
 		}
 	}
 
