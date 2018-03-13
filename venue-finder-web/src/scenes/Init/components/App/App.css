@@ -2,6 +2,10 @@ html, body {
   height:100%;
 }
 
+body{
+  background-color:#202020;
+}
+
 #root {
   height:100%;
 }
@@ -24,6 +28,10 @@ html, body {
 
 .App-title {
   font-size: 1.5em;
+}
+
+h2{
+  color: white;
 }
 
 .App-intro {

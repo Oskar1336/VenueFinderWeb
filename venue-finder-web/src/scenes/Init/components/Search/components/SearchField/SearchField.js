@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import VenueContainer from '../../../EventList/components/EventList.js';
+import './SearchField.css';
 
 export default class SearchField extends React.Component{
 	constructor(props){
@@ -26,7 +27,7 @@ export default class SearchField extends React.Component{
 						<div className="input-group mb-3">
 			  				<input type="text" value={this.state.city} onChange= {this.updateCity} id="input-city" className="form-control" placeholder={this.props.hintText} aria-label="Recipient's username" aria-describedby="basic-addon2"/>
 			  				<div className="input-group-append">
-			    				<button className="btn btn-outline-secondary" onClick={this.getLatLng} type="button">{this.props.btnText}</button>
+			    				<button className="btn btn-outline-secondary bg-dark" id="btn-search" onClick={this.getLatLng} type="button">{this.props.btnText}</button>
 			  				</div>
 						</div>
 					</div>		
