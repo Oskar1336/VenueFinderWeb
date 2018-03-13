@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import VenueContainer from '../../../EventList/components/EventList.js';
+import {google} from 'react-google-maps'
 
 
 export default class SearchField extends React.Component{
 	constructor(props){
 		super(props);
+
 		this.state =  {
 			city : '',
 			venueList: []
@@ -15,13 +17,18 @@ export default class SearchField extends React.Component{
 		this.fetchResults = this.fetchResults.bind(this);
 	}
 
+	componentDidMount(){
+		var input = document.getElementById("#input-city");
+		var autoComplete = new google.maps.places.Autocomplete(input);
+	}
+
 	render(){
 		return(
 			<div>
 				<div className = "row">
 					<div className="col-lg-6 offset-lg-3">
 						<div className="input-group mb-3">
-			  				<input type="text" value={this.state.city} onChange= {this.updateCity} className="form-control" placeholder={this.props.hintText} aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+			  				<input type="text" value={this.state.city} onChange= {this.updateCity} id="input-city" className="form-control" placeholder={this.props.hintText} aria-label="Recipient's username" aria-describedby="basic-addon2"/>
 			  				<div className="input-group-append">
 			    				<button className="btn btn-outline-secondary" onClick={this.fetchResults} type="button">{this.props.btnText}</button>
 			  				</div>
