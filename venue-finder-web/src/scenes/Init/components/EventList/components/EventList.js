@@ -25,10 +25,10 @@ class VenueInfo extends React.Component {
 				<div className="card col-lg-6 offset-lg-3">
 				  <img className="card-img-top" src="http://destinationfemme.com/wp-content/uploads/2014/08/Concert-Fixed.jpg" alt="Card image cap"/>
 				  <div className="card-body">
-				    <h5 className="card-title">{this.props.event.title}</h5>
-				    <p className="card-text">{this.props.event.location}</p>
-				    <p className="card-text">{this.props.event.time}</p>
-				    <a href={this.props.event.link} class="btn btn-primary">Go somewhere</a>
+				    <h5 className="card-title">{this.props.title}</h5>
+				    <p className="card-text">{this.props.location}</p>
+				    <p className="card-text">{this.props.time}</p>
+				    <a href={this.props.link} class="btn btn-primary">Go somewhere</a>
 				  </div>
 				</div>
 			</div>
