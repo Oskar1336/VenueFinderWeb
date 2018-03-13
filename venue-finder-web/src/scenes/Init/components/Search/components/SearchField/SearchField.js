@@ -17,6 +17,7 @@ export default class SearchField extends React.Component{
 	}
 	render(){
 		return(
+			<div>
 				<div className = "row">
 					<div className="col-lg-6 offset-lg-3">
 						<div className="input-group mb-3">
