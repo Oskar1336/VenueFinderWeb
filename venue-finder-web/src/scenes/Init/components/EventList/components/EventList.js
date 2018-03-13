@@ -28,7 +28,8 @@ class VenueInfo extends React.Component {
 				    <h5 className="card-title">{this.props.title}</h5>
 				    <p className="card-text">{this.props.location}</p>
 				    <p className="card-text">{this.props.time}</p>
-				    <a href={this.props.link} class="btn btn-primary">Go somewhere</a>
+				    <a href={this.props.link} class="btn btn-primary">Buy ticket</a>
+				    <a href={this.props.link} class="btn btn-primary float-right">Go somewhere</a>
 				  </div>
 				</div>
 			</div>
