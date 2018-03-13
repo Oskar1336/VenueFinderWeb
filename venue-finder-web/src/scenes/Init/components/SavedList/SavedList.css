@@ -1,7 +1,24 @@
 
+.event-container {
+	position: relative;
+}
+
+.remove-button {
+	width:10px;
+	position: absolute;
+	right:-25px;
+	top: 5px;
+}
+
 .fab-button {
 	position: fixed;
 	right: 20px;
 	bottom: 20px;
 	z-index: 1000;
+}
+
+.bmd-btn-fab.bmd-btn-fab-sm.custom-file-control:before, .btn-group-sm .bmd-btn-fab.custom-file-control:before, .btn-group-sm .btn.bmd-btn-fab, .btn.bmd-btn-fab.bmd-btn-fab-sm {
+	width:25px;
+	height: 25px;
+	min-width: 25px;
 }

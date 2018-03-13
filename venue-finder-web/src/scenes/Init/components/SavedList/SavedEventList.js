@@ -5,13 +5,17 @@ class SavedEventList extends Component {
 
 	renderSavedEvent(event) {
 		return (
-			<a key={event.title} href={event.link} target="_blank" className="list-group-item list-group-item-action flex-column align-items-start">
+			<div key={event.title} className="event-container list-group-item list-group-item-action flex-column align-items-start">
+				<button type="button" className="btn btn-danger bmd-btn-fab bmd-btn-fab-sm float-right remove-button">
+					<i className="glyphicon glyphicon-remove"></i>
+				</button>
 				<div className="d-flex w-100 justify-content-between">
-					<p className="mb-1">{event.title}</p>
+					<a href={event.link} target="_blank" className="mb-1">{event.title}</a>
 				</div>
 				<small>{event.location}</small>
 				<small className="float-right">{event.time}</small>
-			</a>
+				
+			</div>
 		);
 	}
 
