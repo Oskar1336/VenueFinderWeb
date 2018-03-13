@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './images/logo.svg';
 import './App.css';
 import ShowListButton from '../SavedList/ShowListButton.js';
+import SearchField from '../Search/components/SearchField/SearchField.js'
 
 class App extends Component {
   
@@ -17,16 +18,19 @@ class App extends Component {
           <header>
             <a className="navbar-brand">Saved events</a>
           </header>
-          <div id="saved-events-container"></div>
+          <div id="saved-events-container">
+          </div>
         </div>
         <main className="bmd-layout-content">
           <div className="container">
-              <h1>Hello, World!</h1>
+              <div>
+                <SearchField/>
+              </div>
+              <ShowListButton />
           </div>
         </main>
-
-        <ShowListButton />
       </div>
+      
     );
   }
 }

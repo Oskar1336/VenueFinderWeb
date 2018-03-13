@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import SavedEventList from './SavedEventList.js';
 import schedule from './images/ic_date_range_black.png';
 import './SavedList.css';
@@ -6,7 +7,10 @@ import './SavedList.css';
 class ShowListButton extends Component {
 
 	showSavedList() {
-		
+		var savedEvents = JSON.parse(localStorage.getItem("LOCALSTORAGE_SAVED_EVENTS"));
+		if (savedEvents != null) {
+			ReactDOM.render(<SavedEventList events={savedEvents} />, document.getElementById('saved-events-container'));
+		}
 	}
 
 	render() {
@@ -21,6 +25,3 @@ class ShowListButton extends Component {
 }
 
 export default ShowListButton;
-
-
-
