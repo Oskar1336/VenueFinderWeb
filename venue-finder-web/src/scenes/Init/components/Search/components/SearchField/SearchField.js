@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import VenueContainer from '../EventList/components/EventList.js';
+import VenueContainer from '../../../EventList/components/EventList.js';
 
 
 export default class SearchField extends React.Component{
 	constructor(props){
 		super(props);
-
 		this.state =  {
 			city : '',
 			venueList: []
@@ -15,6 +14,7 @@ export default class SearchField extends React.Component{
 		this.updateCity = this.updateCity.bind(this);
 		this.fetchResults = this.fetchResults.bind(this);
 	}
+
 	render(){
 		return(
 			<div>
@@ -37,28 +37,31 @@ export default class SearchField extends React.Component{
 		this.setState({
 			city : evt.target.value,
 		});
-			
+		this.forceUpdate();	
 	}
+
 
 	fetchResults(){
 		console.log(this.state.city);
+		var that = this;
 		axios.get("http://api.songkick.com/api/3.0/events.json?location=geo:55.6,13.0&apikey=zPpYhc36BMCR85fT")
 			.then(function(response){
 				var eventList = [];
 				console.log(response);
-				for(var i = 0; i < response.resultsPage.results.event.length; i++){
+				for(var i = 0; i < response.data.resultsPage.results.event.length; i++){
 					var event = {
-						title: response.resultsPage.results.event[i].displayName,
-						location: response.resultsPage.results.event[i].venue.displayName,
-						link: response.resultsPage.results.event[i].uri,
-						time: response.resultsPage.results.event[i].start.time
+						title: response.data.resultsPage.results.event[i].displayName,
+						location: response.data.resultsPage.results.event[i].venue.displayName,
+						link: response.data.resultsPage.results.event[i].uri,
+						time: response.data.resultsPage.results.event[i].start.time
 					};
 					eventList.push(event);
 				}
-				this.setState({
-					venueList: [...this.state.venueList, eventList]
-					});
-
+				that.setState({
+					venueList: eventList
+				});
+				console.log(that.state.venueList);	
+			
 			})
 			.catch(function(response){
 				console.log(response);
