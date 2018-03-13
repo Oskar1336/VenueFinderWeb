@@ -11,7 +11,7 @@ class App extends Component {
       <div className="bmd-layout-container bmd-drawer-f-r bmd-drawer-overlay">        
         <header className="bmd-layout-header">
           <div className="navbar navbar-light">
-              VenueFinder
+              <h2>VenueFinder</h2>
           </div>
         </header>
         <div id="dw-p2" className="bmd-layout-drawer bg-faded">
