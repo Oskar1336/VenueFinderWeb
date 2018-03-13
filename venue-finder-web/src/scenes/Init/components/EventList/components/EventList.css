@@ -1,3 +1,11 @@
 .card{
 	margin-top: 2rem;
 }
+
+.form-control {
+	background-image: none;    
+}
+
+.btn {
+	margin-bottom: 0;
+}
