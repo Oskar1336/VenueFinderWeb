@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import VenueContainer from '../../../EventList/components/EventList.js';
-// import {google} from 'react-google-maps'
 
+const MY_API_KEY = "AIzaSyD07WnCpgabR945R95UiJp5LMyfvLkQgP4" // fake
 
 export default class SearchField extends React.Component{
 	constructor(props){
@@ -11,15 +11,13 @@ export default class SearchField extends React.Component{
 		this.state =  {
 			city : '',
 			venueList: []
+			lat: '',
+			lng: ''
 		};
 
 		this.updateCity = this.updateCity.bind(this);
 		this.fetchResults = this.fetchResults.bind(this);
-	}
-
-	componentDidMount(){
-		var input = document.getElementById("#input-city");
-		// var autoComplete = new google.maps.places.Autocomplete(input);
+		this.getLatLng = this.getLatLng.bind(this);
 	}
 
 	render(){
@@ -30,9 +28,8 @@ export default class SearchField extends React.Component{
 						<div className="input-group mb-3">
 			  				<input type="text" value={this.state.city} onChange= {this.updateCity} id="input-city" className="form-control" placeholder={this.props.hintText} aria-label="Recipient's username" aria-describedby="basic-addon2"/>
 			  				<div className="input-group-append">
-			    				<button className="btn btn-outline-secondary" onClick={this.fetchResults} type="button">{this.props.btnText}</button>
+			    				<button className="btn btn-outline-secondary" onClick={this.getLatLng} type="button">{this.props.btnText}</button>
 			  				</div>
-						</div>
 					</div>	
 				</div>
 				<VenueContainer events={this.state.venueList}/>
@@ -44,14 +41,26 @@ export default class SearchField extends React.Component{
 		this.setState({
 			city : evt.target.value,
 		});
-		this.forceUpdate();	
 	}
 
+
+	getLatLng(){
+		var that = this;
+		axios.get("https://maps.googleapis.com/maps/api/geocode/json?address="+{this.state.city}+"&key=AIzaSyD07WnCpgabR945R95UiJp5LMyfvLkQgP4")
+		.then(function(response){
+			that.setState({lat: response.results.location.lat,
+							lng: response.results.location.lng});
+			fetchResults();
+		})
+		.catch(function(response){
+			console.log(response)
+		});
+	}
 
 	fetchResults(){
 		console.log(this.state.city);
 		var that = this;
-		axios.get("http://api.songkick.com/api/3.0/events.json?location=geo:55.6,13.0&apikey=zPpYhc36BMCR85fT")
+		axios.get("http://api.songkick.com/api/3.0/events.json?location=geo:"+{this.state.lat}+","+{this.state.lng}+"&apikey=zPpYhc36BMCR85fT")
 			.then(function(response){
 				var eventList = [];
 				console.log(response);
