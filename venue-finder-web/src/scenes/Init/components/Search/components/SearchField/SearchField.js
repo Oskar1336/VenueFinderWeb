@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import VenueContainer from '../../../EventList/components/EventList.js';
 import './SearchField.css';
+import Alert from '../../../Alerts/components/alert.js'
 
 export default class SearchField extends React.Component{
 	constructor(props){
@@ -11,12 +12,17 @@ export default class SearchField extends React.Component{
 			city : '',
 			venueList: [],
 			lat: '',
-			lng: ''
+			lng: '',
+			alertProps : {
+				message : '',
+				alertVisible: false
+			}
 		};
 
 		this.updateCity = this.updateCity.bind(this);
 		this.fetchResults = this.fetchResults.bind(this);
 		this.getLatLng = this.getLatLng.bind(this);
+		this.showAlert = this.showAlert.bind(this);
 	}
 
 	render(){
@@ -32,6 +38,7 @@ export default class SearchField extends React.Component{
 						</div>
 					</div>		
 				</div>
+				<Alert alert={this.state.alertProps}/>
 				<VenueContainer events={this.state.venueList}/>
 			</div>		
 		);
@@ -43,15 +50,36 @@ export default class SearchField extends React.Component{
 	 	});
 	}
 
+	showAlert(text, show){
+		var refThis = this;
+		let alertProps = {...this.state.alertProps};
+		alertProps.message = text;
+		alertProps.alertVisible = show;
+		this.setState({
+			alertProps 
+		});
+
+		setTimeout(function(){
+			alertProps.alertVisible = false;
+			refThis.setState({
+				alertProps
+			})
+		}, 5000);
+	}
+
 
 	getLatLng(){
 	 	var that = this;
 	 	axios.get("https://maps.googleapis.com/maps/api/geocode/json?address="+that.state.city+"&key=AIzaSyD07WnCpgabR945R95UiJp5LMyfvLkQgP4")
 	 	.then(function(response){
 	 		console.log(response);
-	 		that.setState({lat: response.data.results[0].geometry.location.lat,
-	 						lng: response.data.results[0].geometry.location.lng});
-	 		that.fetchResults();
+	 		if(response.data.results.length != 0){
+		 		that.setState({lat: response.data.results[0].geometry.location.lat,
+		 						lng: response.data.results[0].geometry.location.lng});
+		 		that.fetchResults();
+	 		}else{
+	 			that.showAlert("No such city!", true);
+	 		}
 	 	})
 	 	.catch(function(response){
 	 		console.log(response)

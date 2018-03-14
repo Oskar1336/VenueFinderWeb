@@ -1,0 +1,869 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"input",
+				"input-city"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"eve",
+				"eventList〔variable〕"
+			],
+			[
+				"upda",
+				"updateVenues"
+			],
+			[
+				"ev",
+				"eventList"
+			],
+			[
+				"venu",
+				"venueList"
+			],
+			[
+				"ven",
+				"venueList"
+			],
+			[
+				"ve",
+				"venueList"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"c",
+				"city"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"Sear",
+				"SearchField"
+			],
+			[
+				"getElemen",
+				"getElementById\t( elementId: DOMString ): Element Document"
+			],
+			[
+				"React",
+				"ReactDOM"
+			],
+			[
+				"requi",
+				"require〔function〕"
+			],
+			[
+				"HT",
+				"HTMLWebpackPluginConfig"
+			],
+			[
+				"show",
+				"showDangerMessage"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"margion",
+				"margin-top"
+			],
+			[
+				"sh",
+				"showDangerMessage"
+			],
+			[
+				"getf",
+				"getFavMovie"
+			],
+			[
+				"me",
+				"message\t: string Error"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"btn",
+				"btn-fav"
+			],
+			[
+				"fav",
+				"favMovie"
+			],
+			[
+				"texts",
+				"text-decoration-style"
+			],
+			[
+				"s",
+				"space-between"
+			],
+			[
+				"fle",
+				"flex-wrap"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"path",
+				"pathToFile"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"mo",
+				"moviesList"
+			],
+			[
+				"J",
+				"JSON"
+			],
+			[
+				"add",
+				"addButtonListener"
+			],
+			[
+				"movie",
+				"movie-library"
+			],
+			[
+				"title",
+				"title\t: DOMString Document"
+			],
+			[
+				"chil",
+				"first-child〔function〕"
+			],
+			[
+				"att",
+				"attr"
+			],
+			[
+				"img",
+				"imgAdress"
+			],
+			[
+				"com",
+				"componentID"
+			],
+			[
+				"fir",
+				"first〔function〕"
+			],
+			[
+				"getMv",
+				"getMovieItemList"
+			],
+			[
+				"mov",
+				"movieItems"
+			],
+			[
+				"movieitem",
+				"movieItemList"
+			],
+			[
+				"firs",
+				"first"
+			],
+			[
+				"first",
+				"first-child〔function〕"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"fl",
+				"flex-end"
+			],
+			[
+				"al",
+				"align-self"
+			],
+			[
+				"t",
+				"toString〔function〕"
+			],
+			[
+				"row",
+				"rowID"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"j",
+				"jquery"
+			],
+			[
+				"delete",
+				"deleteSearchResults〔function〕"
+			],
+			[
+				"sp",
+				"space-around"
+			],
+			[
+				"chi",
+				"child〔function〕"
+			],
+			[
+				"remo",
+				"removeResults"
+			],
+			[
+				"getMo",
+				"getMovies"
+			],
+			[
+				"in",
+				"input-movie-title"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"bo",
+				"box-shadow"
+			],
+			[
+				"Json",
+				"JSON_parse\t( json: string ): any JSON"
+			],
+			[
+				"js",
+				"JSON_parse\t( json: string ): any JSON"
+			],
+			[
+				"nu",
+				"number"
+			],
+			[
+				"la",
+				"lastname"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"get",
+				"getSelectedCategory"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"inp",
+				"inputfields〔variable〕"
+			],
+			[
+				"tr",
+				"trim〔function〕"
+			],
+			[
+				"console",
+				"console.log"
+			],
+			[
+				"all",
+				"allGood〔variable〕"
+			],
+			[
+				"which",
+				"whichPage"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"heigt",
+				"height\t Style CSS"
+			],
+			[
+				"cha",
+				"changeCSS"
+			],
+			[
+				"gete",
+				"getElementById\t( elementId: DOMString ): Element Document"
+			],
+			[
+				"old",
+				"oldlink"
+			],
+			[
+				"parent",
+				"parentNode\t: Node Node"
+			],
+			[
+				"ch",
+				"childElementCount\t: unsigned long Document"
+			],
+			[
+				"rem",
+				"removeChild\t( child: Node ): Node Node"
+			],
+			[
+				"mat-",
+				"mat-gray-theme"
+			],
+			[
+				"textDe",
+				"textDecoration\t = 'underline' Style CSS"
+			],
+			[
+				"local",
+				"localStorage\t: Storage Window"
+			],
+			[
+				"this",
+				"thisLink"
+			],
+			[
+				"bacl",
+				"background-color"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"remove",
+				"removeItem\t( key: DOMString ): void Storage"
+			],
+			[
+				"quert",
+				"querySelector\t( selectors: DOMString ): Element Element"
+			],
+			[
+				"select",
+				"selectedIndex"
+			],
+			[
+				"quer",
+				"querySelector\t( selectors: DOMString ): Element Element"
+			],
+			[
+				"create",
+				"createElement\t( localName: DOMString ): Element Document"
+			],
+			[
+				"querr",
+				"querySelectorAll\t( selectors: DOMString ): NodeList Element"
+			],
+			[
+				"getelem",
+				"getElementsByClassName\t( classNames: DOMString ): HTMLCollection Element"
+			],
+			[
+				"getElem",
+				"getElementsByClassName\t( classNames: DOMString ): HTMLCollection Element"
+			],
+			[
+				"shadow",
+				"box-shadow"
+			],
+			[
+				"spa",
+				"space-between"
+			],
+			[
+				"arti",
+				"articles"
+			],
+			[
+				"style",
+				"style\t Style CSS"
+			],
+			[
+				"window",
+				"windowWidth"
+			],
+			[
+				"wi",
+				"width\t = '' Style CSS"
+			],
+			[
+				"nextSi",
+				"nextSibling"
+			],
+			[
+				"nexts",
+				"nextSibling"
+			],
+			[
+				"qu",
+				"querySelector\t( selectors: DOMString ): Element Document"
+			],
+			[
+				"next",
+				"nextElementSibling\t: Element Element"
+			],
+			[
+				"men",
+				"meny"
+			],
+			[
+				"query",
+				"querySelectorAll\t( selectors: DOMString ): NodeList Element"
+			],
+			[
+				"meny",
+				"menyH3"
+			],
+			[
+				"texttr",
+				"text-transform"
+			],
+			[
+				"alig",
+				"align-self"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"fonts",
+				"font-size"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"l",
+				"li\tTag"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"text-l",
+				"text-align"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"textal",
+				"text-align"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"met",
+				"meta\tTag"
+			],
+			[
+				"pading",
+				"padding-left"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"packa",
+				"Package Control: Disable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"rempve",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"manage",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"material theme configuration",
+				"Material Theme: Advanced configuration"
+			],
+			[
+				"material",
+				"Material Theme: Advanced configuration"
+			],
+			[
+				"Package Control:",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 592.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/LinusHakansson/Documents/GitHub/VenueFinderWeb/venue-finder-web"
+	],
+	"file_history":
+	[
+		"/Users/LinusHakansson/Documents/GitHub/VenueFinderWeb/venue-finder-web/src/scenes/Init/components/App/App.js",
+		"/Users/LinusHakansson/Documents/GitHub/VenueFinderWeb/venue-finder-web/src/index.js",
+		"/Users/LinusHakansson/Documents/GitHub/VenueFinderWeb/venue-finder-web/src/scenes/Init/components/EventList/components/EventList.js",
+		"/Users/LinusHakansson/Documents/GitHub/VenueFinderWeb/venue-finder-web/src/scenes/Init/components/App/App.css",
+		"/Users/LinusHakansson/Documents/GitHub/VenueFinderWeb/venue-finder-web/src/scenes/Init/components/Search/components/SearchField/SearchField.js",
+		"/Users/LinusHakansson/Documents/GitHub/VenueFinderWeb/venue-finder-web/public/index.html",
+		"/Users/LinusHakansson/Documents/GitHub/VenueFinderWeb/venue-finder-web/src/scenes/Init/components/EventList/components/EventList.css",
+		"/Users/LinusHakansson/Documents/GitHub/VenueFinderWeb/venue-finder-web/src/scenes/Init/components/Search/components/SearchField/search-field.css",
+		"/Users/LinusHakansson/Documents/GitHub/VenueFinderWeb/venue-finder-web/node_modules/react-input-autosize/lib/AutosizeInput.js",
+		"/Users/LinusHakansson/Documents/GitHub/VenueFinderWeb/venue-finder-web/src/scenes/Start/components/SearchField/SearchField.js",
+		"/Users/LinusHakansson/Documents/GitHub/VenueFinderWeb/venue-finder-web/package.json",
+		"/Users/LinusHakansson/Desktop/FirstReactProject/webpack.config.js",
+		"/Users/LinusHakansson/Desktop/FirstReactProject/package.json",
+		"/Users/LinusHakansson/Desktop/FirstReactProject/.babelrc",
+		"/Users/LinusHakansson/Desktop/react/src/client/app/index.jsx",
+		"/Users/LinusHakansson/Desktop/react/webpack.config.js",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/inlamning2/js/script.js",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/inlamning2/html/movie-library.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/inlamning2/js/movie-library.js",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/inlamning2/html/media.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/inlamning2/js/media.js",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/inlamning2/manifest.json",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/inlamning2/service-worker.js",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/inlamning2/html/index.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/inlamning2/css/style.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/inlamning2/node_modules/bootstrap/dist/css/bootstrap.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/lab9/script.js",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/lab9/index.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/inlamning2/html/test.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/lab9/server.php",
+		"/Users/LinusHakansson/Desktop/Inlämningsuppgift1/js/main.js",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/inlämningsuppgift2/js/script.js",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/styles/start.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-ajax/Moviefinder/index.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-ajax/Moviefinder/script.js",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/inlämningsuppgift2/css/style.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Bootstrap-lab/index.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-ajax/Moviefinder/style.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-ajax/style.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/js/main.js",
+		"/Users/LinusHakansson/Downloads/ajax/ajax-2/script.js",
+		"/Users/LinusHakansson/Downloads/ajax/ajax-1/script.js",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/html/index.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/html/mat.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-ajax/index.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-jQuery/5.1/script.js",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-jQuery/5.1/index.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/styles/start-gray-theme.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/styles/start-red-theme.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/styles/start-blue-theme.css",
+		"/Users/LinusHakansson/Library/Application Support/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/Users/LinusHakansson/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-jQuery/uppg3/script.js",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-jQuery/miniraknare/script.js",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-jQuery/miniraknare/miniraknare.html",
+		"/Users/LinusHakansson/Documents/AtomProjects/Test/index.html",
+		"/Users/LinusHakansson/Documents/AtomProjects/laboration1e/index.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-jQuery/uppg3/index.htm",
+		"/Users/LinusHakansson/Documents/AtomProjects/laboration2/index.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-jQuery/uppgift2get/uppg3.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-jQuery/uppgift2get/script.js",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-jQuery/uppg3/index.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-jQuery/uppgift2/index.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-jQuery/uppgift3/script.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-jQuery/script.js",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-jQuery/index.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Laboration-jQuery/Kom igång med jQuery.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/styles/mat-blue-theme.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/styles/mat-gray-theme.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/styles/mat-red-theme.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/js/mat.js",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/mat-blue-theme.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/mat-red-theme.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/mat-gray-theme.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/start-blue-theme.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/mat.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/style.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/start-red-theme.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Inlämningsuppgift1/main.js",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/RealMedaQueryLab/style.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/RealMedaQueryLab/index.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Media-query-labb/style.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/Media-query-labb/index.html",
+		"/Users/LinusHakansson/Documents/GitHub/PasswordKeeper/app/src/main/res/values/styles.xml",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/index.html",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/style.css",
+		"/Users/LinusHakansson/Documents/SublimeWorkspace/myWeb.sublime-workspace",
+		"/Users/LinusHakansson/Downloads/Rocket Design Starter Files/css/font-awesome.min.css",
+		"/Users/LinusHakansson/Downloads/Rocket Design Starter Files/index.html",
+		"/Users/LinusHakansson/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/LinusHakansson/Library/Application Support/Sublime Text 3/Packages/Material Theme/Preferences.sublime-settings",
+		"/Users/LinusHakansson/Downloads/7b/Slideshow/script.js",
+		"/Users/LinusHakansson/Downloads/7b/Todo/script.js",
+		"/Users/LinusHakansson/Documents/AtomProjects/laboration2/uppg2/main.js",
+		"/Users/LinusHakansson/Desktop/test.js",
+		"/Users/LinusHakansson/Documents/AtomProjects/laboration2/uppg5/main.js",
+		"/Users/LinusHakansson/Downloads/city.list.json",
+		"/Users/LinusHakansson/Documents/AtomProjects/laboration2/main.js",
+		"/Users/LinusHakansson/Documents/AtomProjects/laboration2/style.css",
+		"/Users/LinusHakansson/Documents/AtomProjects/laboration1d/style.css",
+		"/Users/LinusHakansson/Documents/AtomProjects/laboration1c/style.css",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/Lab5_funka/Lab4/keyboard.inc",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/Lab5_funka/Lab4/lcd.inc",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/Lab5_funka/Lab4/tarning.inc",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/Lab5_funka/Lab4/stats_data.inc",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/Lab5_funka/Lab4/stats.inc",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/Lab5_funka/Lab4/Lab4.asm",
+		"/Users/LinusHakansson/Documents/TGDAB16HT/År2/Inbyggda system/Laborationer/4/Lab4/Lab4/lcd.inc",
+		"/Users/LinusHakansson/Documents/TGDAB16HT/År2/Inbyggda system/Laborationer/4/Lab4/Lab4/Lab4.asm",
+		"/Users/LinusHakansson/Documents/TGDAB16HT/År2/Inbyggda system/Laborationer/4/Lab4/Lab4/delay.inc",
+		"/Users/LinusHakansson/Documents/TGDAB16HT/År2/Inbyggda system/Laborationer/4/Lab4/Lab4/keyboard.inc",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/Labb3/Labb3/regulator/regulator.c",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/Labb3/Labb3/numkey/numkey.c",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/Labb3/Labb3/lcd/lcd.c",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/Labb3/Labb3/lab3.c",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/Labb3/Labb3/hmi/hmi.c",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/lab2_klar/Lab2/Lab2/Lab2.c",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/lab2_klar/Lab2/Lab2/guess_nr.c",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/lab2_klar/Lab2/Lab2/hmi/hmi.c",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/lab2_klar/Lab2/Lab2/lcd/lcd.c",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/lab2_klar/Lab2/Lab2/numkey/numkey.c",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/lab1-2/numkey/numkey.c",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/lab1-2/lcd/lcd.c",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/lab1-2/lab1.c",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/lab1-2/common.h",
+		"/Users/LinusHakansson/Desktop/Labels created in the code segment (.CSEG) - progr",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/Lab5_funka/Lab4/delay.inc",
+		"/Users/LinusHakansson/Desktop/EmbeddedSystems/Lab5_funka/Lab4/monitor.inc"
+	],
+	"find":
+	{
+		"height": 48.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 45.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 29.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Venue-finder-web.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/TGDAB16HT/År2/HT/Utveckling av mobila enheter/Föreläsningar/DA345AF4HT17/main/java/se/mah/tsroax/f4broadcastreceiver1/MainActivity.java"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 248.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

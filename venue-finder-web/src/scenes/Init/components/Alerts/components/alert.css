@@ -1,0 +1,20 @@
+.alert{
+	-webkit-animation: fadeinout 2s linear 1 forwards;
+    animation: fadeinout 4s linear 1 forwards;
+    text-align: center;
+    width: 50%;
+    margin:auto;
+}
+
+
+@-webkit-keyframes fadeinout {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes fadeinout {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}

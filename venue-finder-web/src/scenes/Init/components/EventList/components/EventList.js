@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import './EventList.css';
 import concertPic from './images/concert-image.jpg'
 import {searchForEvent} from '../../../../../helpers.js'
+import Alert from '../../Alerts/components/alert.js'
 
 
 export default class VenueContainer extends React.Component {
@@ -22,6 +24,38 @@ export default class VenueContainer extends React.Component {
 
 class VenueInfo extends React.Component {
 
+	constructor(props){
+		super(props);
+
+		this.state = {
+			alertProps : {
+				alertMessage: '',
+				alertVisible : false,
+				alertState : ''
+			}
+		}
+	}
+
+	showAlert(){
+		var classReference = this;
+		let alertProps = {...this.state.alertProps};
+		alertProps.alertVisible = true;
+		alertProps.alertMessage = 'Added to your event list-->'
+		this.setState({
+			alertProps
+		});
+
+		ReactDOM.render(<Alert alert={this.state.alertProps}/>, document.getElementById("root"));
+		console.log("showAlert");
+
+		setTimeout(function(){
+			alertProps.alertVisible = false;
+			classReference.setState({
+				alertProps
+			});
+		}, 5000);
+	}
+
 	saveEvent(event) {
 		var eventList = JSON.parse(localStorage.getItem("LOCALSTORAGE_SAVED_EVENTS"));
 		if (eventList == null) {
@@ -33,6 +67,7 @@ class VenueInfo extends React.Component {
 		if (!searchForEvent(event, eventList.events)) {
 			eventList.events.push(event);
 			localStorage.setItem("LOCALSTORAGE_SAVED_EVENTS", JSON.stringify(eventList));
+			this.showAlert();
 		}
 	}
 
