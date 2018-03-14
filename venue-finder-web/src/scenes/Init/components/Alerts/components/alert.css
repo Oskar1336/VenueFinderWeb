@@ -3,7 +3,13 @@
     animation: fadeinout 4s linear 1 forwards;
     text-align: center;
     width: 50%;
-    margin:auto;
+    position: fixed;
+    
+    left: 50%;
+    margin-left: -25%;
+    z-index: 1000;
+    top:150px;
+    
 }
 
 

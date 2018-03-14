@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import VenueContainer from '../../../EventList/components/EventList.js';
 import './SearchField.css';
-import Alert from '../../../Alerts/components/alert.js'
 
 export default class SearchField extends Component{
 	constructor(props){
@@ -38,8 +37,7 @@ export default class SearchField extends Component{
 						</div>
 					</div>		
 				</div>
-				<Alert alert={this.state.alertProps}/>
-				<VenueContainer events={this.state.venueList}/>
+				<VenueContainer showAlert={this.showAlert} events={this.state.venueList}/>
 			</div>		
 		);
 	}
@@ -50,21 +48,8 @@ export default class SearchField extends Component{
 	 	});
 	}
 
-	showAlert(text, show){
-		var refThis = this;
-		let alertProps = {...this.state.alertProps};
-		alertProps.message = text;
-		alertProps.alertVisible = show;
-		this.setState({
-			alertProps 
-		});
-
-		setTimeout(function(){
-			alertProps.alertVisible = false;
-			refThis.setState({
-				alertProps
-			})
-		}, 5000);
+	showAlert(text){
+		this.props.showAlert(text);
 	}
 
 
@@ -73,21 +58,21 @@ export default class SearchField extends Component{
 	 	axios.get("https://maps.googleapis.com/maps/api/geocode/json?address="+that.state.city+"&key=AIzaSyD07WnCpgabR945R95UiJp5LMyfvLkQgP4")
 	 	.then(function(response){
 	 		console.log(response);
-	 		if(response.data.results.length != 0){
+	 		if(response.data.results.length !== 0){
 		 		that.setState({lat: response.data.results[0].geometry.location.lat,
 		 						lng: response.data.results[0].geometry.location.lng});
 		 		that.fetchResults();
 	 		}else{
-	 			that.showAlert("No such city!", true);
+	 			that.showAlert("No such city!");
 	 		}
 	 	})
 	 	.catch(function(response){
-	 		console.log(response)
+	 		console.log(response);
+	 		that.showAlert("Fetch failed!");
 	 	});
 	 }
 
 	fetchResults(){
-		console.log(this.state.city);
 		var that = this;
 		axios.get("http://api.songkick.com/api/3.0/events.json?location=geo:"+that.state.lat+","+that.state.lng+"&apikey=zPpYhc36BMCR85fT")
 			.then(function(response){
@@ -105,11 +90,11 @@ export default class SearchField extends Component{
 				that.setState({
 					venueList: eventList
 				});
-				console.log(that.state.venueList);	
 			
 			})
 			.catch(function(response){
 				console.log(response);
+				that.showAlert("Fetch failed!");
 			});
 	}
 

@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import './alert.css';
 
-export default class Alert extends React.Component{
-	constructor(props){
-		super(props);
-		console.log(props);
-	}
-
+export default class Alert extends Component{
 	render(){
 		if(this.props.alert.alertVisible){
 			return(

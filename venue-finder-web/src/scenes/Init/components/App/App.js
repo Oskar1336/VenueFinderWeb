@@ -3,6 +3,7 @@ import './App.css';
 import SearchField from '../Search/components/SearchField/SearchField.js'
 import SavedEventList from '../SavedList/SavedEventList.js';
 import schedule from './images/ic_date_range_black.png';
+import Alert from '../Alerts/components/alert.js'
 
 class App extends Component {
   
@@ -10,10 +11,15 @@ class App extends Component {
     super(props);
 
     this.state = {
-      savedEvents: []
+      savedEvents: [],
+      alertProps : {
+        message : '',
+        alertVisible: false
+      }
     };
 
     this.removeEvent = this.removeEvent.bind(this);
+    this.showAlert = this.showAlert.bind(this);
   }
 
   removeEvent(event) {
@@ -36,9 +42,27 @@ class App extends Component {
     }
   }
 
+  showAlert(text){
+    var refThis = this;
+    let alertProps = {...this.state.alertProps};
+    alertProps.message = text;
+    alertProps.alertVisible = true;
+    this.setState({
+      alertProps 
+    });
+
+    setTimeout(function(){
+      alertProps.alertVisible = false;
+      refThis.setState({
+        alertProps
+      })
+    }, 5000);
+  }
+
   render() {
     return (
-      <div className="bmd-layout-container bmd-drawer-f-r bmd-drawer-overlay">        
+      <div className="bmd-layout-container bmd-drawer-f-r bmd-drawer-overlay">     
+      <Alert alert={this.state.alertProps}/>   
           <header className="bmd-layout-header">
             <div className="navbar navbar-light">
                 <h2>VenueFinder</h2>
@@ -55,7 +79,7 @@ class App extends Component {
           <main className="bmd-layout-content">
             <div className="container">
                 <div>
-                  <SearchField/>
+                  <SearchField showAlert={this.showAlert}/>
                 </div>
         <div className="fab-button">
           <button type="button" data-toggle="drawer" data-target="#dw-p2" onClick={() => this.showSavedList()} className="btn btn-info bmd-btn-fab">
