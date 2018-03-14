@@ -22,3 +22,9 @@
 	height: 25px;
 	min-width: 25px;
 }
+
+.close-img {
+	width:20px;
+	height:20px;
+	margin-left: 2px;
+}

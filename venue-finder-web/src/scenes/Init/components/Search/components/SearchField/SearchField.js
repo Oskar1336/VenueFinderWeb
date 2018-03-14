@@ -4,7 +4,7 @@ import VenueContainer from '../../../EventList/components/EventList.js';
 import './SearchField.css';
 import Alert from '../../../Alerts/components/alert.js'
 
-export default class SearchField extends React.Component{
+export default class SearchField extends Component{
 	constructor(props){
 		super(props);
 

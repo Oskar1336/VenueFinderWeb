@@ -6,11 +6,8 @@ import {searchForEvent} from '../../../../../helpers.js'
 import Alert from '../../Alerts/components/alert.js'
 
 
-export default class VenueContainer extends React.Component {
-	constructor(props){
-		super(props);
-		console.log(props);
-	}
+export default class VenueContainer extends Component {
+	
 	render() {
       return (
          <div>
@@ -75,7 +72,7 @@ class VenueInfo extends React.Component {
 		return(
 			<div className="row">
 				<div className="card col-lg-6 offset-lg-3 text-white bg-dark">
-				  <img className="card-img-top" id="concertLogo" src={concertPic} alt="Card image cap"/>
+				  <img className="card-img-top" id="concertLogo" src={concertPic} alt="Card cap"/>
 				  <div className="card-body">
 				    <h5 className="card-title">{this.props.events.title}</h5>
 				    <p className="card-text">{this.props.events.location}</p>
